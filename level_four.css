@@ -1,26 +1,36 @@
 .container {
   display: grid;
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
 }
 
 #navbar {
-
+  grid-column-start: 1;
+  grid-column-end: 6;
 }
 
 #sidebar {
   writing-mode: vertical-rl;
+  grid-row-start: 2;
+  grid-row-end: 5;
 
 }
 
 #title {
-
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 
 
 #content {
-
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 
 #footer {
-
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
 }
